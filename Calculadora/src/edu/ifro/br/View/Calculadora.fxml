@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="359.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.ifro.br.Control.CalculadoraController">
+   <children>
+      <TextField fx:id="txtnum1" layoutX="39.0" layoutY="126.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="40.0" layoutY="101.0" prefHeight="25.0" prefWidth="73.0" text="Número 1:" />
+      <Label layoutX="40.0" layoutY="162.0" text="Número 2" />
+      <TextField fx:id="txtnum2" layoutX="39.0" layoutY="187.0" prefHeight="25.0" prefWidth="112.0" />
+      <MenuButton layoutX="204.0" layoutY="180.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="97.0" text="Operação">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#somar" text="+ (Somar)" />
+          <MenuItem mnemonicParsing="false" onAction="#subtrair" text="- (Subtrair)" />
+            <MenuItem mnemonicParsing="false" onAction="#multiplicar" text="* (Multiplicar)" />
+            <MenuItem mnemonicParsing="false" onAction="#dividir" text="/ (Dividir)" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="txtresult" layoutX="39.0" layoutY="256.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="40.0" layoutY="232.0" text="Resultado" />
+   </children>
+</AnchorPane>
